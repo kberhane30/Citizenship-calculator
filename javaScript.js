@@ -1,5 +1,6 @@
 
 
+
 let selectDate = document.getElementById('Calender');
 let button = document.getElementById('result');
 let ShowResult = document.getElementById('Result');
@@ -31,7 +32,7 @@ console.log(period.get('days'));
 console.log(applyingDate.format('MMM/DD/YYYY'));
 
 dur.innerText = period.get('years') +" years " + period.get('month') + " months " + period.get('days') + " Days ";
-apply.innerText = applyingDate.format('MMM/DD/YYYY');
+apply.innerText = applyingDate.format('MMMM/DD/YYYY');
 
 
 
@@ -39,7 +40,5 @@ apply.innerText = applyingDate.format('MMM/DD/YYYY');
 // ShowResult.innerText = `Your best day to apply will be on: ${applyingDate.toString()}`;
 //     ShowResult.innerText = `The time left until you apply to your citizenship is : ${years} years and ${months} months and ${days} days so make sure you are prepared, Good luck`;
 })
-
-
 
 

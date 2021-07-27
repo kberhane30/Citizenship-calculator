@@ -1,0 +1,20 @@
+{
+  "name": "citizenship-calculator",
+  "version": "1.0.0",
+  "description": "A calculator that preform a simple calculation for U.S Alien residents on the duration left for them to apply for their U.S citizenship",
+  "main": "javaScript.js",
+  "scripts": {
+    "start": "node javaScript.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kberhane30/Citizenship-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kberhane30/Citizenship-calculator/issues"
+  },
+  "homepage": "https://github.com/kberhane30/Citizenship-calculator#readme"
+}

@@ -5,14 +5,6 @@
 .calculator{
     margin-top: 8em;
 }
-.popup{
-    width: 600px;
-    height: 410px;
-    background-color: white;
-    position: absolute;
-    top: 16%;
-    right: 30%;
-}
 h1{
     font-family:translate;
     text-align: center;
@@ -85,3 +77,70 @@ h2{
     width: 570px;
     padding: 1px;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: darkslategray;
+    }
+    .calculator{
+        margin:0px;
+        background-color:black;
+    }
+    h1{
+        font-family:translate;
+        text-align: center;
+        background-color: rgb(16, 41, 41);
+        width:100%;
+        padding: 10px;
+        color: whitesmoke;
+    }
+    .instructions{
+        background-color: rgb(22, 21, 21);
+        color: blanchedalmond;
+        width:100%;
+        padding: 10px;
+    }
+    .calc{
+        color: whitesmoke;
+        background-color: rgb(16, 41, 41);
+        width:100%;
+        padding: 10px;
+    }
+    button{
+        border-radius: 10px;
+        padding: 10px;
+        width: fit-content;
+        border-style: none;
+        outline: none;
+        /* margin-left: 15px; */
+        background-color: orange;
+        color: black;
+        font-family: Arial;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    input{
+        width: 150px;
+        border-radius: 10px;
+        padding:7px;
+        margin-left:7px;
+        border-style: none;
+        outline: none;
+    }
+    #Result{
+        text-align: center;
+        font-size: 18px;
+        color: rgb(247, 242, 239);
+        background-color: rgb(8, 19, 19);
+        width:100%;
+        margin: auto;
+        padding: 10px;
+    }
+    h2{
+        text-align: center;
+        margin: auto;
+        background-color:rgb(187, 181, 181);
+        color: rgb(28, 29, 29);
+        width: 100%;
+        padding: 10px;
+    }
+  }
