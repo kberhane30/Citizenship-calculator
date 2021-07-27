@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizenship calculator</title>
+</head>
+<body>
+<!-- The title goes here -->
+<div class="calculator">
+<h1>Citizenship calculator</h1>
+
+<!-- some description Or instructions on how to use the program -->
+    <div class="instructions">
+    <h4>Please carefully do the following :</h4>
+     <ul>
+         <li>Selcet your first day in the United states of America in the format of  mm/dd/yyyy </li>
+         <li>Click on the " Show my result " button</li>
+         <li>chose you whether want the result to be mailed or not </li>
+     </ul>
+    </div>
+    <div class="popup">
+        <h2></h2>
+        <p id="Result"></p>
+    </div>
+
+    <div class="calc">
+     <label> Enter a valid date</label><br><br>
+     <input id="Calender" type="date">
+
+     <button id="result">Show my result</button>
+
+    </div>
+
+    <script src="moment.min.js"></script>
+    <script src="javaScript.js"></script>
+</div>
+</body>
+</html>
