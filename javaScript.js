@@ -7,6 +7,7 @@ let ShowResult = document.getElementById('Result');
 let popup = document.querySelector('.popup');
 let dur = document.querySelector('.Dur');
 let apply = document.querySelector('.Apply');
+let RemainingTime = document.querySelector('.RemainingTime');
 window.onload = popup.classList.remove('popup');
 
 
@@ -36,6 +37,16 @@ apply.innerText = applyingDate.format('MMMM/DD/YYYY');
 
 
 
+   let dayse = Math.floor(diff/(1000*60*60*24));
+   let monthse = Math.floor(diff/(1000*60*60*24)/30);
+   let yearse = Math.floor(diff/(1000*60*60*24)/365);
+
+   dayse%=30;
+   monthse%=12;
+   yearse%=365;
+
+
+   RemainingTime.innerText = yearse + "years " + monthse + " months " + " " +  dayse + "Days ";
 
 // ShowResult.innerText = `Your best day to apply will be on: ${applyingDate.toString()}`;
 //     ShowResult.innerText = `The time left until you apply to your citizenship is : ${years} years and ${months} months and ${days} days so make sure you are prepared, Good luck`;
