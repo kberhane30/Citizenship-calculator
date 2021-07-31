@@ -1,0 +1,206 @@
+
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+#head{
+
+    background-image:url(4.jpg); 
+    background-size:cover;
+    height: 80vh;
+    background-repeat:no-repeat;
+    background-position: right 15% bottom 65%;
+}
+h1{
+    background-color:rgba(0, 0, 0, 0.486) ;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+     width:40%;
+     backdrop-filter: blur(5px);
+     text-align: left;
+    margin:0.5em 1.5em;
+    border-radius: 15px;
+    padding: 10px;
+    color:rgba(230, 223, 223, 0.952);
+    font-size: 8em;
+}
+#Logo{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 4rem;
+    padding: 1% 10%;
+    letter-spacing:-5px;
+    color: rgb(210, 42, 30);
+    text-shadow: 2px 6px 4px black;
+}
+a{
+    float:right;
+    position:absolute;
+    top:40px;
+    right: 35px;
+    margin-right: 1%;
+}
+.wraper{
+    /* background-color:red;  */
+    display:flex;
+    margin: auto;
+    padding-left:20%;
+
+}
+.far{
+    background-color:rgb(252, 66, 66);
+    padding: 50px;
+    border-radius: 100%;
+    font-size: 7rem;
+    color:rgb(41, 54, 128);
+    margin-bottom:22px;
+}
+.far:hover{
+    background-color:rgb(240, 135, 135);
+}
+.instra1{
+    width: 20%;
+    text-align: center;
+    margin: 35px 50px 5px 250px;
+}
+.instra2{
+    width: 20%;
+    text-align: center;
+    margin: 35px 50px 5px 100px;
+}
+p{
+    font-size:2em;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    text-align: center;
+}
+#calender{
+    margin-top: 5%;
+    background-color: #C22332;
+    background-repeat:no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-position:right 0% bottom 5%;
+    height :700px;
+}
+.container{
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+#inpt{
+    font-size:1em;
+    width:500px;
+    padding:5px 25px;
+    border-radius:5px;
+    border-style: none;
+    outline:none;
+}
+button{
+    padding: 10px;
+    width: 10rem;
+    font-size:20px;
+    font-weight: bolder;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    background-color:black;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius:10px;
+    outline: none;
+    margin-top: 30px;
+}
+button:hover{
+    background-color:rgb(199, 194, 194);
+    color: black;
+}
+.TheResult{
+    margin:20px auto;
+    width: 800px;
+    padding:10px;
+}
+.RemainingTime{
+    margin:20px auto;
+    width: 800px;
+    padding:10px;
+}
+.fab{
+    font-size:3em;
+    padding: 8px;
+    margin-top: 2em;
+}
+.social{
+    width: 200px;
+    margin: 2em 50em;
+}
+
+@media only screen and (max-width: 1000px) {
+    #head{
+        height: 50vh;
+    }
+    h1{
+        font-weight: bolder;
+         width:98%;
+         backdrop-filter: blur(12px);
+         text-align: center;
+         margin:0px;
+         position:absolute;
+         top: 15%;
+    }
+    .far{
+        background-color:rgb(252, 66, 66);
+        padding: 50px;
+        border-radius: 100%;
+        font-size: 7rem;
+        color:rgb(41, 54, 128);
+        margin-bottom:22px;
+    }
+    .far:hover{
+        background-color:rgb(240, 135, 135);
+    }
+    .instra1{
+        width: 40%;
+        text-align: center;
+        margin: 35px 50px 5px 0px;
+    }
+    .instra2{
+        width: 40%;
+        text-align: center;
+        margin: 35px 10px 5px -20px;
+    }
+    .social{
+        margin:0em 25em;
+        width: 200px;
+    }
+  }
+  @media only screen and (max-width: 1366px){
+    h1{
+        font-weight: bolder;
+         width:98%;
+         backdrop-filter: blur(12px);
+         text-align: center;
+         margin:0px;
+         position:absolute;
+         top: 15%;
+    }
+    .far:hover{
+        background-color:rgb(240, 135, 135);
+    }
+    .instra1{
+        width: 40%;
+        text-align: center;
+        margin: 35px 50px 5px 0px;
+    }
+    .instra2{
+        width: 40%;
+        text-align: center;
+        margin: 35px 10px 5px -20px;
+    }
+    .social{
+        margin:0em 25em;
+        width: 200px;
+    }
+}
+

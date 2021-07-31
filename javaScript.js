@@ -1,14 +1,13 @@
 
 
 
-let selectDate = document.getElementById('Calender');
+let selectDate = document.getElementById('inpt');
 let button = document.getElementById('result');
 let ShowResult = document.getElementById('Result');
 let popup = document.querySelector('.popup');
-let dur = document.querySelector('.Dur');
+let dur = document.querySelector('.TheResult');
 let apply = document.querySelector('.Apply');
 let RemainingTime = document.querySelector('.RemainingTime');
-window.onload = popup.classList.remove('popup');
 
 
 button.addEventListener('click',()=>{
@@ -18,13 +17,11 @@ button.addEventListener('click',()=>{
      let cur = moment();
      let diff = applyingDate - cur;
      
-     // let years = Math.floor(diff/(1000*60*60*24)/365);
-
-     // console.log(applyingDate.format('MMMM/DD/YYYY'));
-
      const x= moment();
      const y = moment(selectDate.value);
      const period = moment.duration(x.diff(y));
+
+     
 
 console.log(period.get('years'));
 console.log(period.get('month'));
@@ -33,7 +30,7 @@ console.log(period.get('days'));
 console.log(applyingDate.format('MMM/DD/YYYY'));
 
 dur.innerText = period.get('years') +" years " + period.get('month') + " months " + period.get('days') + " Days ";
-apply.innerText = applyingDate.format('MMMM/DD/YYYY');
+dur.innerText = "You can submit your application by : " + applyingDate.format(' MMMM / DD/ YYYY');
 
 
 
@@ -46,7 +43,7 @@ apply.innerText = applyingDate.format('MMMM/DD/YYYY');
    yearse%=365;
 
 
-   RemainingTime.innerText = yearse + "years " + monthse + " months " + " " +  dayse + "Days ";
+   RemainingTime.innerText ="Your remaining Time is : " +  yearse + " years " + monthse + " months " + " " +  dayse + " " + " Days ";
 
 // ShowResult.innerText = `Your best day to apply will be on: ${applyingDate.toString()}`;
 //     ShowResult.innerText = `The time left until you apply to your citizenship is : ${years} years and ${months} months and ${days} days so make sure you are prepared, Good luck`;
